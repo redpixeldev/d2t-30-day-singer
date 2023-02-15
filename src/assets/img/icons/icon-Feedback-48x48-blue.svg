@@ -1,0 +1,4 @@
+<svg id="icon-Feedback-48x48-blue" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Frame" width="32" height="32" fill="none"/>
+  <path id="Icons_icon-Feedback-48x48" data-name="Icons / icon-Feedback-48x48" d="M18,32l-4-4H8a1.894,1.894,0,0,1-1.4-.617A1.938,1.938,0,0,1,6,26V6a1.919,1.919,0,0,1,.6-1.4A1.919,1.919,0,0,1,8,4H28a1.938,1.938,0,0,1,1.383.6A1.894,1.894,0,0,1,30,6V26a2.116,2.116,0,0,1-2,2H22ZM8,26h6.8L18,29.2,21.2,26H28V6H8ZM8,6V6ZM19.9,17.967,24.167,16.1,19.9,14.233,18.033,9.967l-1.9,4.267L11.9,16.1l4.233,1.867,1.9,4.267Z" transform="translate(-2 -2)" fill="#5e9afe"/>
+</svg>

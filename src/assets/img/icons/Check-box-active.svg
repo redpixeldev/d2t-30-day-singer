@@ -1,0 +1,6 @@
+<svg id="Check-box-active" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="check_box-black-18dp">
+    <rect id="check-box" width="18" height="18" rx="4" fill="#39f"/>
+    <path id="check" d="M10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z" transform="translate(-3 -3)" fill="#fff"/>
+  </g>
+</svg>

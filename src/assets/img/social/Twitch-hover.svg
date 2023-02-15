@@ -1,0 +1,4 @@
+<svg id="Twitch-hover" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="SocialMedia-frame" width="24" height="24" fill="none"/>
+  <path id="Twitch" d="M4.322,15.369H0V3.341L3.6,0H17.285V9.355L10.8,15.369H7.923l-3.6,3.341Zm0-4.01H7.563V13.7l2.521-2.338h2.881l2.881-2.673V1.337H4.322Zm7.923-3.676V3.676h1.44V7.684Zm-3.961,0V3.676h1.44V7.684Z" transform="translate(3 3)" fill="#39f"/>
+</svg>

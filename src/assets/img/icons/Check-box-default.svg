@@ -1,0 +1,13 @@
+<svg id="Check-box-default" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="check-box" fill="#fff" stroke="#e2e2e2" stroke-width="2">
+    <rect width="18" height="18" rx="4" stroke="none"/>
+    <rect x="1" y="1" width="16" height="16" rx="3" fill="none"/>
+  </g>
+  <g id="check_box-black-18dp" opacity="0">
+    <g id="check-box-2" data-name="check-box" fill="#555" stroke="#e2e2e2" stroke-width="2">
+      <rect width="18" height="18" rx="4" stroke="none"/>
+      <rect x="1" y="1" width="16" height="16" rx="3" fill="none"/>
+    </g>
+    <path id="check" d="M10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z" transform="translate(-3 -3)" fill="#fff"/>
+  </g>
+</svg>

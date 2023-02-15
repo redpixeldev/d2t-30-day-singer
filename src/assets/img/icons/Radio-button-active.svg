@@ -1,0 +1,6 @@
+<svg id="Radio-button-active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="radio-selected">
+    <rect id="Frame" width="24" height="24" fill="none"/>
+    <path id="radio" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2Zm0,13a5,5,0,1,1,5-5A5.006,5.006,0,0,1,10,15Z" transform="translate(2 2)" fill="#39f"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="icon-Currently-playing" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Currently-playing" transform="translate(3 3)">
+    <circle id="Ellipse-center" cx="6" cy="6" r="6" transform="translate(3 3)" fill="#e53d28"/>
+    <g id="Ellipse-pulse" fill="none" stroke="#e53d28" stroke-width="1" opacity="0.35">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8.5" fill="none"/>
+    </g>
+  </g>
+  <rect id="Rectangle_964" data-name="Rectangle 964" width="24" height="24" fill="none"/>
+</svg>

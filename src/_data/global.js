@@ -1,5 +1,5 @@
 module.exports = {
-	siteName: "Eleventy Starter",
+	siteName: "30 Day Singer",
 	siteTitle: "",
 	siteDescription: "",
 	siteUrl: "",
