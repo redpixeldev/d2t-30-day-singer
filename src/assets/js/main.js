@@ -13,6 +13,10 @@ Alpine.store("mobileMenu", {
 	close() {
 		this.isOpen = false;
 	},
+
+	open() {
+		this.isOpen = true;
+	},
 });
 
 window.Alpine = Alpine;
