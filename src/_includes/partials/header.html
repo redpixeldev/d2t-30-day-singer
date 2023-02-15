@@ -1,24 +1,43 @@
-<div class="py-3 bg-brand-vibrant-green">
+<div class="relative py-3 bg-brand-vibrant-green">
 	<div class="container">
-		<span class="block text-base font-bold text-center text-white"
-			>Gift Certificates Now Available! Click Here To Give The Gift Of Singing To Someone Special.</span
+		<span
+			class="block px-8 text-xs font-semibold text-center text-white md:px-12 md:text-sm lg:text-base lg:font-bold"
 		>
+			Gift Certificates Now Available! Click Here To Give The Gift Of Singing To Someone Special.
+		</span>
+		<button class="absolute right-4 top-3 text-white sm:top-2 md:top-2.5 lg:top-3">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+			>
+				<path
+					d="m12 13.49-5.217 5.217a1.01 1.01 0 0 1-.745.293 1.054 1.054 0 0 1-.745-1.783L10.51 12 5.293 6.783A1.01 1.01 0 0 1 5 6.038a1.054 1.054 0 0 1 1.783-.745L12 10.51l5.217-5.217a1.054 1.054 0 0 1 1.49 1.49L13.49 12l5.217 5.217a1.054 1.054 0 0 1-1.49 1.49Z"
+					fill="currentColor"
+				/>
+				<path
+					fill="none"
+					d="M0 0h24v24H0z"
+				/>
+			</svg>
+		</button>
 	</div>
 </div>
 <div class="bg-white shadow-[0px_2px_4px_#0000000F]">
-	<div class="container flex justify-between py-5">
-		<div class="max-h-10">
+	<div class="container flex items-center justify-between py-2 lg:items-start lg:py-5">
+		<div class="lg:max-h-10">
 			<a
 				href="/"
-				class="-mt-5 block rounded-b-xl bg-white p-5 shadow-[0px_3px_16px_#0000001F]"
+				class="block bg-white lg:-mt-5 lg:rounded-b-xl lg:p-5 lg:shadow-[0px_3px_16px_#0000001F]"
 			>
 				<img
 					src="/assets/img/logo-vertical.svg"
 					alt=""
+					class="h-14 lg:h-auto"
 				/>
 			</a>
 		</div>
-		<div class="w-1/3">
+		<div class="w-7/12 lg:w-1/3">
 			<form
 				action=""
 				class="relative w-full"
@@ -46,7 +65,7 @@
 				</button>
 			</form>
 		</div>
-		<ul class="flex items-center gap-3">
+		<ul class="items-center hidden gap-3 lg:flex">
 			<li>
 				<a
 					href="/"
@@ -72,5 +91,21 @@
 				</a>
 			</li>
 		</ul>
+		<button class="p-1 border-2 rounded border-brand-primary text-brand-primary lg:hidden">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="w-6 h-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+				/>
+			</svg>
+		</button>
 	</div>
 </div>
