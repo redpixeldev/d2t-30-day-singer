@@ -6,7 +6,7 @@ module.exports = {
 	content: ["./src/**/*.{html,njk,md}"],
 	theme: {
 		fontFamily: {
-			body: ["Helvetica", "sans-serif"],
+			body: ["Switzer", "sans-serif"],
 			header: ["Oswald", "sans-serif"],
 		},
 
@@ -29,6 +29,7 @@ module.exports = {
 					vibrant: {
 						yellow: "#FFD000",
 						green: "#5DB77A",
+						red: "#FF0000",
 					},
 				},
 			},
