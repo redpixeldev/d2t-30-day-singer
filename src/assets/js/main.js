@@ -1,24 +1,21 @@
-import Alpine from "alpinejs";
-import focus from "@alpinejs/focus";
-
-Alpine.plugin(focus);
-
-Alpine.store("mobileMenu", {
-	isOpen: false,
-
-	toggle() {
-		this.isOpen = !this.isOpen;
-	},
-
-	close() {
-		this.isOpen = false;
-	},
-
-	open() {
-		this.isOpen = true;
-	},
+$(document).ready(function () {
+	$(".video-slider").slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+		],
+	});
 });
-
-window.Alpine = Alpine;
-
-Alpine.start();

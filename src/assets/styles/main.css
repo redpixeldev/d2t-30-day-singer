@@ -21,3 +21,16 @@
 		@apply !hidden;
 	}
 }
+
+.slick-next {
+	@apply right-3 z-10 !important;
+}
+
+.slick-prev {
+	@apply left-3 z-10 !important;
+}
+
+.slick-next,
+.slick-prev {
+	@apply top-[40%];
+}
