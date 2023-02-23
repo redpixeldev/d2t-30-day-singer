@@ -28,7 +28,7 @@ module.exports = {
 					},
 					vibrant: {
 						yellow: "#FFD000",
-						green: "#5DB77A",
+						green: "#00b67a",
 						red: "#FF0000",
 					},
 				},
