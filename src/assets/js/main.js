@@ -1,3 +1,26 @@
+import Alpine from "alpinejs";
+import focus from "@alpinejs/focus";
+import collapse from "@alpinejs/collapse";
+
+Alpine.plugin(focus);
+Alpine.plugin(collapse);
+
+Alpine.store("mobileMenu", {
+	isOpen: false,
+
+	toggle() {
+		this.isOpen = !this.isOpen;
+	},
+
+	close() {
+		this.isOpen = false;
+	},
+});
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
 $(document).ready(function () {
 	$(".video-slider").slick({
 		infinite: true,

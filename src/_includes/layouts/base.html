@@ -43,6 +43,22 @@
 			rel="stylesheet"
 			href="{{ '/assets/styles/main.css' | url }}"
 		/>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+			integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			type="text/javascript"
+			src="/assets/slick/slick.min.js"
+		></script>
+
+		<script
+			type="module"
+			src="{{ '/assets/js/main.js' | url }}"
+		></script>
 	</head>
 
 	<body
@@ -63,21 +79,5 @@
 			{% endblock %}
 		</main>
 		{% include "partials/footer.html" %}
-
-		<script
-			src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-			integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
-			crossorigin="anonymous"
-		></script>
-
-		<script
-			type="text/javascript"
-			src="/assets/slick/slick.min.js"
-		></script>
-
-		<script
-			type="module"
-			src="{{ '/assets/js/main.js' | url }}"
-		></script>
 	</body>
 </html>
