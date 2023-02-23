@@ -1,0 +1,542 @@
+---
+title: Unlock
+permalink: /unlock/
+layout: "layouts/base.html"
+header: "clean"
+---
+
+<div class="relative">
+	<img
+		src="/assets/img/hero-unlock.png"
+		alt=""
+		class="absolute inset-0 h-full w-full object-cover"
+		style="clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%)"
+	/>
+	<div class="container relative pt-20 pb-40">
+		<div class="text-center">
+			<span class="block text-3xl font-medium text-white">Upgrade to Full Access</span>
+			<h1 class="mx-auto mt-4 max-w-xl text-center text-7xl font-bold text-white">
+				Unlock Your Best Singing Voice!
+			</h1>
+		</div>
+		<img
+			src="/assets/img/video-unlock.png"
+			alt=""
+			class="mx-auto mt-16 -mb-96 block"
+		/>
+	</div>
+</div>
+<div class="mt-64 pb-16">
+	<div class="mt-7 flex flex-col items-center justify-center gap-8 md:flex-row">
+		<div class="flex gap-2">
+			<div>
+				<img
+					src="/assets/img/awards/Award-1-GOLD.svg"
+					alt=""
+					class="h-20 w-20"
+				/>
+			</div>
+			<div>
+				<img
+					src="/assets/img/awards/Award-2-GOLD.svg"
+					alt=""
+					class="h-20 w-20"
+				/>
+			</div>
+			<div>
+				<img
+					src="/assets/img/awards/Award-3-GOLD.svg"
+					alt=""
+					class="h-20 w-20"
+				/>
+			</div>
+		</div>
+		<div class="flex justify-between gap-10 rounded-lg border border-brand-gray-light p-6">
+			<span class="text-sm text-black">
+				FEATURING *
+				<span class="block font-bold">Reagan James From</span>
+			</span>
+			<div>
+				<img
+					src="/assets/img/icon-voice.png"
+					alt=""
+					style="width: 77px; height: 41px"
+				/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="-mb-16 bg-brand-gray-lighter pt-24 pb-40">
+	<div class="container">
+		<h3 class="text-center text-4xl font-bold text-black lg:text-6xl">
+			Frequently Asked <span class="text-brand-primary">Questions</span>
+		</h3>
+		<p class="mt-2.5 text-center text-xl text-black lg:text-2xl">
+			Here are some answers to frequently asked questions.
+		</p>
+		<div
+			class="mt-14 space-y-6"
+			x-data="{ active: 1 }"
+		>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 1,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold">Will the course work for beginners?</span>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 2,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold"
+						>Is it true that some people are born “musical” and that I might be “tone-deaf”?</span
+					>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 3,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold"
+						>Is it really true that I will notice a difference in my singing voice in only 30 days?</span
+					>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 4,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold"
+						>What if I can’t practice every day? Can I take longer?</span
+					>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 5,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold"
+						>It says that there are guaranteed results, what does that mean?</span
+					>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+			<div
+				class="rounded-lg border-2 border-brand-gray-light bg-white p-3 shadow-[0_4px_12px_rgba(0,0,0,0.08)] md:p-6"
+				x-data="{
+						id: 6,
+						get expanded() {
+								return this.active === this.id
+						},
+						set expanded(value) {
+								this.active = value ? this.id : null
+						},
+				}"
+				role="region"
+			>
+				<button
+					class="flex w-full items-center justify-between"
+					@click="expanded = !expanded"
+					:aria-expanded="expanded"
+				>
+					<span class="pr-8 text-left text-base font-bold">Will I be playing guitar during the course?</span>
+					<span
+						class="text-brand-primary"
+						x-show="!expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 4.5v15m7.5-7.5h-15"
+							/>
+						</svg>
+					</span>
+					<span
+						class="text-brand-primary"
+						x-show="expanded"
+						aria-hidden="true"
+						x-cloak
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 12h-15"
+							/>
+						</svg>
+					</span>
+				</button>
+				<div
+					class="pt-4 pr-8 md:pt-6 md:pr-16"
+					x-show="expanded"
+					x-collapse
+					x-cloak
+				>
+					<p class="text-base text-black">
+						Yes! If you take the time to follow along with the all the exercises and even repeat lessons where
+						you feel you need more work, you will improve. The more consistent you are, the better the
+						results.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
