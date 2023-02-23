@@ -49,7 +49,13 @@
 		x-data
 		:class="{'overflow-hidden': $store.mobileMenu.isOpen }"
 	>
-		{% include "partials/header.html" %}
+		<!-- prettier-ignore -->
+		{% if header == 'clean' %}
+			{% include "partials/header-clean.html" %}
+		{% else %}
+			{% include "partials/header.html" %}
+		{% endif %}
+
 		<main class="pb-16">
 			<!-- prettier-ignore -->
 			{% block content %}
