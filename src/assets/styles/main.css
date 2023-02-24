@@ -34,3 +34,23 @@
 .slick-prev {
 	@apply top-[40%];
 }
+
+.slick-dots {
+	@apply inset-x-0 -bottom-24 mx-auto w-10/12 border-t border-brand-gray-light pt-4 md:w-1/2;
+
+	li {
+		@apply m-0;
+		&.slick-active {
+			button:before {
+				@apply text-brand-primary;
+			}
+		}
+		button {
+			@apply p-0;
+
+			&:before {
+				@apply text-xs;
+			}
+		}
+	}
+}
