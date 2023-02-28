@@ -123,33 +123,43 @@ layout: "layouts/base.html"
 						</button>
 					</div>
 				</div>
-				<div class="relative mt-6">
-					<div
-						class="absolute inset-0 h-full w-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]"
-					></div>
-					<p class="text-base text-black line-clamp-3">
-						Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
-						sharing the beauty and joy of music with others, whether through performance or teaching. Camille
-						began studying voice and performing in musicals at age seven. In 2010, Camille began working
-						towards her BA in Music Education at Azusa Pacific University, where she studied classical voice
-						with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille graduated Summa
-						cum laude with a 3.98 GPA. She then earned her teaching credential from San Diego State University
-						and taught classroom choral and instrumental music. Shortly after moving to LA county, Camille
-						began her private vocal studio, providing vocal coaching, ear training, and recording for students
-						of all ages.
-					</p>
-				</div>
-				<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
-					<button
-						class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						View Lessons
-					</button>
-					<button
-						class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						Show More
-					</button>
+				<div x-data="{ expanded: false }">
+					<div class="relative mt-6">
+						<div
+							class="absolute inset-0 h-full w-full"
+							:class="!expanded ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]' : ''"
+						></div>
+						<p
+							class="text-base text-black"
+							x-show="expanded"
+							x-cloak
+							x-collapse.min.100px
+						>
+							Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
+							sharing the beauty and joy of music with others, whether through performance or teaching.
+							Camille began studying voice and performing in musicals at age seven. In 2010, Camille began
+							working towards her BA in Music Education at Azusa Pacific University, where she studied
+							classical voice with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille
+							graduated Summa cum laude with a 3.98 GPA. She then earned her teaching credential from San
+							Diego State University and taught classroom choral and instrumental music. Shortly after moving
+							to LA county, Camille began her private vocal studio, providing vocal coaching, ear training,
+							and recording for students of all ages.
+						</p>
+					</div>
+					<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
+						<button
+							class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							View Lessons
+						</button>
+						<button
+							@click="expanded = ! expanded"
+							class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							Show
+							<span x-text="expanded ? 'Less' : 'More'"></span>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="w-full rounded-lg border border-brand-gray-light bg-white p-6 shadow-md">
@@ -233,33 +243,43 @@ layout: "layouts/base.html"
 						</div>
 					</div>
 				</div>
-				<div class="relative mt-6">
-					<div
-						class="absolute inset-0 h-full w-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]"
-					></div>
-					<p class="text-base text-black line-clamp-3">
-						Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
-						sharing the beauty and joy of music with others, whether through performance or teaching. Camille
-						began studying voice and performing in musicals at age seven. In 2010, Camille began working
-						towards her BA in Music Education at Azusa Pacific University, where she studied classical voice
-						with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille graduated Summa
-						cum laude with a 3.98 GPA. She then earned her teaching credential from San Diego State University
-						and taught classroom choral and instrumental music. Shortly after moving to LA county, Camille
-						began her private vocal studio, providing vocal coaching, ear training, and recording for students
-						of all ages.
-					</p>
-				</div>
-				<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
-					<button
-						class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						View Lessons
-					</button>
-					<button
-						class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						Show More
-					</button>
+				<div x-data="{ expanded: false }">
+					<div class="relative mt-6">
+						<div
+							class="absolute inset-0 h-full w-full"
+							:class="!expanded ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]' : ''"
+						></div>
+						<p
+							class="text-base text-black"
+							x-show="expanded"
+							x-cloak
+							x-collapse.min.100px
+						>
+							Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
+							sharing the beauty and joy of music with others, whether through performance or teaching.
+							Camille began studying voice and performing in musicals at age seven. In 2010, Camille began
+							working towards her BA in Music Education at Azusa Pacific University, where she studied
+							classical voice with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille
+							graduated Summa cum laude with a 3.98 GPA. She then earned her teaching credential from San
+							Diego State University and taught classroom choral and instrumental music. Shortly after moving
+							to LA county, Camille began her private vocal studio, providing vocal coaching, ear training,
+							and recording for students of all ages.
+						</p>
+					</div>
+					<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
+						<button
+							class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							View Lessons
+						</button>
+						<button
+							@click="expanded = ! expanded"
+							class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							Show
+							<span x-text="expanded ? 'Less' : 'More'"></span>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="w-full rounded-lg border border-brand-gray-light bg-white p-6 shadow-md">
@@ -368,33 +388,43 @@ layout: "layouts/base.html"
 						</button>
 					</div>
 				</div>
-				<div class="relative mt-6">
-					<div
-						class="absolute inset-0 h-full w-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]"
-					></div>
-					<p class="text-base text-black line-clamp-3">
-						Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
-						sharing the beauty and joy of music with others, whether through performance or teaching. Camille
-						began studying voice and performing in musicals at age seven. In 2010, Camille began working
-						towards her BA in Music Education at Azusa Pacific University, where she studied classical voice
-						with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille graduated Summa
-						cum laude with a 3.98 GPA. She then earned her teaching credential from San Diego State University
-						and taught classroom choral and instrumental music. Shortly after moving to LA county, Camille
-						began her private vocal studio, providing vocal coaching, ear training, and recording for students
-						of all ages.
-					</p>
-				</div>
-				<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
-					<button
-						class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						View Lessons
-					</button>
-					<button
-						class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						Show More
-					</button>
+				<div x-data="{ expanded: false }">
+					<div class="relative mt-6">
+						<div
+							class="absolute inset-0 h-full w-full"
+							:class="!expanded ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]' : ''"
+						></div>
+						<p
+							class="text-base text-black"
+							x-show="expanded"
+							x-cloak
+							x-collapse.min.100px
+						>
+							Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
+							sharing the beauty and joy of music with others, whether through performance or teaching.
+							Camille began studying voice and performing in musicals at age seven. In 2010, Camille began
+							working towards her BA in Music Education at Azusa Pacific University, where she studied
+							classical voice with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille
+							graduated Summa cum laude with a 3.98 GPA. She then earned her teaching credential from San
+							Diego State University and taught classroom choral and instrumental music. Shortly after moving
+							to LA county, Camille began her private vocal studio, providing vocal coaching, ear training,
+							and recording for students of all ages.
+						</p>
+					</div>
+					<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
+						<button
+							class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							View Lessons
+						</button>
+						<button
+							@click="expanded = ! expanded"
+							class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							Show
+							<span x-text="expanded ? 'Less' : 'More'"></span>
+						</button>
+					</div>
 				</div>
 			</div>
 			<div class="w-full rounded-lg border border-brand-gray-light bg-white p-6 shadow-md">
@@ -478,33 +508,43 @@ layout: "layouts/base.html"
 						</div>
 					</div>
 				</div>
-				<div class="relative mt-6">
-					<div
-						class="absolute inset-0 h-full w-full bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]"
-					></div>
-					<p class="text-base text-black line-clamp-3">
-						Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
-						sharing the beauty and joy of music with others, whether through performance or teaching. Camille
-						began studying voice and performing in musicals at age seven. In 2010, Camille began working
-						towards her BA in Music Education at Azusa Pacific University, where she studied classical voice
-						with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille graduated Summa
-						cum laude with a 3.98 GPA. She then earned her teaching credential from San Diego State University
-						and taught classroom choral and instrumental music. Shortly after moving to LA county, Camille
-						began her private vocal studio, providing vocal coaching, ear training, and recording for students
-						of all ages.
-					</p>
-				</div>
-				<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
-					<button
-						class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						View Lessons
-					</button>
-					<button
-						class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
-					>
-						Show More
-					</button>
+				<div x-data="{ expanded: false }">
+					<div class="relative mt-6">
+						<div
+							class="absolute inset-0 h-full w-full"
+							:class="!expanded ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#ffffff_100%)]' : ''"
+						></div>
+						<p
+							class="text-base text-black"
+							x-show="expanded"
+							x-cloak
+							x-collapse.min.100px
+						>
+							Camille van Niekerk is a singer, writer and vocal instructor in Southern California. She loves
+							sharing the beauty and joy of music with others, whether through performance or teaching.
+							Camille began studying voice and performing in musicals at age seven. In 2010, Camille began
+							working towards her BA in Music Education at Azusa Pacific University, where she studied
+							classical voice with Rebecca Genzink and jazz voice with Kristin Korb and John… Proulx. Camille
+							graduated Summa cum laude with a 3.98 GPA. She then earned her teaching credential from San
+							Diego State University and taught classroom choral and instrumental music. Shortly after moving
+							to LA county, Camille began her private vocal studio, providing vocal coaching, ear training,
+							and recording for students of all ages.
+						</p>
+					</div>
+					<div class="mt-6 flex flex-col-reverse gap-6 md:flex-row">
+						<button
+							class="block w-full flex-1 rounded bg-brand-primary py-3 px-4 text-center text-base font-bold text-white transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							View Lessons
+						</button>
+						<button
+							@click="expanded = ! expanded"
+							class="block w-full flex-1 rounded bg-brand-gray-lighter py-3 px-4 text-center text-base font-semibold text-black transition-colors duration-300 ease-in-out hover:bg-brand-vibrant-yellow hover:text-black"
+						>
+							Show
+							<span x-text="expanded ? 'Less' : 'More'"></span>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
