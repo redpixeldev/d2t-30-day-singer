@@ -108,9 +108,17 @@ header: "clean"
 			</div>
 		</div>
 		<div class="mx-auto mt-12 pb-32 lg:mt-0 lg:w-1/2 lg:pb-0">
-			<div class="space-y-6">
-				<div
-					class="relative flex flex-col-reverse justify-between rounded-lg border-4 border-brand-vibrant-yellow bg-[rgba(255,206,10,0.04)] md:flex-row"
+			<div
+				class="space-y-6"
+				x-data="{
+					plan: 'annual'
+				}"
+			>
+				<label
+					:class="{'!border-4 !bg-[rgba(255,206,10,0.04)] !border-brand-vibrant-yellow' : plan === 'annual'}"
+					for="plan-annual"
+					class="relative flex cursor-pointer flex-col-reverse justify-between rounded-lg border-2 border-brand-gray-light md:flex-row"
+					@click="plan = 'annual'"
 				>
 					<img
 						src="/assets/img/seal-best-deal.svg"
@@ -120,7 +128,9 @@ header: "clean"
 					<div class="flex flex-1 flex-col py-7 pr-8 pl-6">
 						<input
 							type="radio"
+							name="plan"
 							checked
+							id="plan-annual"
 							class="h-5 w-5 border-2 border-brand-gray-light checked:text-black"
 						/>
 
@@ -143,11 +153,18 @@ header: "clean"
 						alt=""
 						class="h-20 w-full object-cover md:h-auto md:w-1/4"
 					/>
-				</div>
-				<div class="flex flex-col rounded-lg border-2 border-brand-gray-light p-6">
+				</label>
+				<label
+					:class="{'!border-4 !bg-[rgba(255,206,10,0.04)] !border-brand-vibrant-yellow' : plan === 'monthly'}"
+					@click="plan = 'monthly'"
+					for="plan-monthly"
+					class="flex cursor-pointer flex-col rounded-lg border-2 border-brand-gray-light p-6"
+				>
 					<input
 						type="radio"
-						class="h-5 w-5 border-2 border-brand-gray-light"
+						name="plan"
+						id="plan-monthly"
+						class="h-5 w-5 border-2 border-brand-gray-light checked:text-black"
 					/>
 					<h3 class="mt-4 text-3xl font-bold text-black md:text-4xl">
 						Pay Month-To-Month <span class="font-normal">(Full Price)</span>
@@ -155,15 +172,22 @@ header: "clean"
 					<p class="mt-2 text-base text-black">
 						<span class="font-bold">$29.95 / Billed Monthly</span> - Cancel Anytime - 60 Day Guarantee
 					</p>
-				</div>
-				<div class="flex flex-col rounded-lg border-2 border-brand-gray-light p-6">
+				</label>
+				<label
+					for="plan-basic"
+					class="flex cursor-pointer flex-col rounded-lg border-2 border-brand-gray-light p-6"
+					:class="{'!border-4 !bg-[rgba(255,206,10,0.04)] !border-brand-vibrant-yellow' : plan === 'basic'}"
+					@click="plan = 'basic'"
+				>
 					<input
+						name="plan"
+						id="plan-basic"
 						type="radio"
-						class="h-5 w-5 border-2 border-brand-gray-light"
+						class="h-5 w-5 border-2 border-brand-gray-light checked:text-black"
 					/>
 					<h3 class="mt-4 text-4xl font-bold text-black">Basic Membership</h3>
 					<p class="mt-2 text-base text-black">Free Account with Preview Lessons</p>
-				</div>
+				</label>
 			</div>
 			<div class="mt-14">
 				<div class="relative">
